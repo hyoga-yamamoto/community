@@ -1,0 +1,66 @@
+.new__contents{
+  background-color: rgb(243, 243, 243);
+  height: 100vh;
+  width: 100%;
+  padding: 60px 0 0 200px;
+  .new-title{
+    font-size: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    .textbox{
+      font-size: 20px;
+      width: 1000px;
+      height: 40px;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+  }
+  .new-place{
+    font-size: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    .textbox{
+      font-size: 20px;
+      width: 1000px;
+      height: 40px;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+  }
+  .new-image{
+    font-size: 30px;
+    margin-bottom: 80px;
+    position: relative;
+    .textbox{
+      height: 40px;
+      width: 1000px;
+      font-size: 20px;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+  }
+  .new-content{
+    font-size: 30px;
+    margin-bottom: 350px;
+    position: relative;
+    textarea {
+      resize: none;
+      font-size: 20px;
+      width: 750px;
+      height: 300px;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+  }
+  .button{
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    width: 240px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+<div class="header">
+  <%=link_to"Community", posts_path, class: "title" %>
+
+  <div class="right-header">
+
+  <% if user_signed_in? && current_user.id == @post.user_id %>
+    <%=link_to" Edit",edit_post_path, class: "edit" %>
+    <%= link_to "Delete", post_path(@post.id), method: :delete, class: "delete" %>
+  <% end %>
+  </div>
+
+</div>
+
+<div class="content-in">
+  <div class="content-in__title">
+    <h1><%= @post.title %></h1>
+  </div>
+  <div class="content-in__inner">
+    <div class="content-in__inner__left">
+      <img src="<%= "#{@post.image}" %>" width="650" height="530">
+      <div class="content-in__inner__left__caption">
+        <%= @post.content %>
+      </div>
+    </div>
+    <div class="content-in__inner__right">
+      <div class="content-in__inner__right__placs">
+        <h2>開催場所</h2>
+          <%= @post.place %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

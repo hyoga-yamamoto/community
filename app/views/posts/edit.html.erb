@@ -1,0 +1,26 @@
+<div class="header">
+  <%=link_to"Community", posts_path, class: "title" %>
+</div>
+
+
+<%= form_with model: @post, class: :new__contents do |form| %>
+
+
+  <div class="new-title">タイトル
+    <%= form.text_field :title, placeholder: :タイトルを入力してください, class: "textbox"%>
+  </div>
+
+  <div class="new-place">開催場所  
+    <%= form.text_field :place, placeholder: :（例）　東京都　　目黒区, class: "textbox"%>
+  </div>
+
+  <div class="new-image">メイン画像
+    <%= form.text_field :image, placeholder: "イメージURL", class: "textbox"%>
+  </div>
+
+  <div class="new-content">概要文
+    <%= form.text_area :content, placeholder: :コミニュティの特徴を記入してください %>
+  </div>
+
+  <%= form.submit '投稿する' , class: "button"%>
+<% end %>

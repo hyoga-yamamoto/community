@@ -1,0 +1,45 @@
+<div class="header">
+  <%=link_to"Community", posts_path, class: "title" %>
+
+  <div class="right-header">
+
+  <% if user_signed_in? %>
+    <%= link_to current_user.nickname, user_path(current_user), class: "nickname"%>
+    <%= link_to "新規投稿", new_post_path, class: "new-access" %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "new-access" %>
+  <% else %>
+    <%= link_to "ログイン", new_user_session_path, class: "new-access" %>
+    <%= link_to "新規登録", new_user_registration_path, class: "new-access" %>
+  <% end %>
+  <%= form_tag(posts_path, :method => "get" ,class: "search")  do %>  
+      <%= text_field_tag :search, params[:search] ,placeholder: "投稿を検索する",class: "search__input"%>  
+      <%= submit_tag "検索",class: "search__button"%>
+  <% end %>
+
+  </div>
+  
+</div>
+
+<div class="contents">
+  <% @posts.each do |post| %>
+    <div class="contents__box">
+      <div class="contents__box__inner">
+        <%= link_to post_path(post.id) do%>
+          <div class="post-image">
+            <img src="<%= "#{post.image}" %>" width="400" height="340"　>
+          </div>
+        <% end %>
+        <div class="post-title">
+          <%= post.title %>
+          <div class="post-place">
+            <small>開催場所</small>
+            <div class="post-place1"><%= post.place %></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  <% end %>
+  <%= paginate(@posts) %>
+</div>
+
