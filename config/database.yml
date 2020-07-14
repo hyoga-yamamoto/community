@@ -49,6 +49,14 @@ test:
 #
 production:
   <<: *default
-  database: community_production
-  username: community
-  password: <%= ENV['COMMUNITY_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+
+
+
+  # <<: *default
+  # database: community_production
+  # username: community
+  # password: <%= ENV['COMMUNITY_DATABASE_PASSWORD'] %>
