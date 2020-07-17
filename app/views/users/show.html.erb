@@ -1,6 +1,7 @@
 <div class="header">
   <%=link_to"Community", posts_path, class: "title" %>
 </div>
+
 <div class="contents">
   <% @posts.each do |post| %>
     <div class="contents__box">
@@ -16,7 +17,6 @@
             <small>開催場所</small>
             <div class="post-place1"><%= post.place %></div>
           </div>
-        </div>
         </div>
       </div>
     </div>
