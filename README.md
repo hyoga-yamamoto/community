@@ -4,15 +4,14 @@
 
 
 作ったアプリを見ることができます→　https://communityyamamoto.herokuapp.com/
-
+[アプリを見る](https://communityyamamoto.herokuapp.com/)
 # README
 
 ![image](https://user-images.githubusercontent.com/62647561/88026469-e2cbbc80-cb70-11ea-83c7-522292cc7241.png)
 1番最初のページでログインしないと投稿はできなくっています。
 各イベントの詳細は見ることができます。
-開催場所を検索できます。
-
-
+開催場所を検索できます。  
+  
 ![image](https://user-images.githubusercontent.com/62647561/88447462-7c93b200-ce6e-11ea-92d5-484215d84f28.png)
 ログインするとヘッダーにユーザーネイムyamaが表示されます。
 
