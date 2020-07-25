@@ -3,7 +3,6 @@
 コミニュティアプリを作りました！
 
 
-作ったアプリを見ることができます→　https://communityyamamoto.herokuapp.com/
 [アプリを見る](https://communityyamamoto.herokuapp.com/)
 # README
 
@@ -11,7 +10,8 @@
 1番最初のページでログインしないと投稿はできなくっています。
 各イベントの詳細は見ることができます。
 開催場所を検索できます。  
-  
+
+
 ![image](https://user-images.githubusercontent.com/62647561/88447462-7c93b200-ce6e-11ea-92d5-484215d84f28.png)
 ログインするとヘッダーにユーザーネイムyamaが表示されます。
 
