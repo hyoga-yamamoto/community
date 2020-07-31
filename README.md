@@ -13,7 +13,7 @@
 
 ![image](https://user-images.githubusercontent.com/62647561/88447462-7c93b200-ce6e-11ea-92d5-484215d84f28.png)
 ログインするとヘッダーにユーザーネイムyamaが表示されます。
-     
+     　　
      
 ![image](https://user-images.githubusercontent.com/62647561/88448258-c2547880-ce76-11ea-9611-39f168905aee.png)
 ログインしていて、自分が投稿した物は詳細ページで消去、編集ができます
